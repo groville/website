@@ -1,0 +1,92 @@
+/*item margin*/
+table.wc-block-cart-items, table.wc-block-cart-items td, table.wc-block-cart-items th {
+    background: none!important;
+    border: 0;
+    margin: 0 0 0px;
+}
+/*proceed to checkout butt*/
+.wp-block-post-content a:not(.wp-block-button__link) {
+    -webkit-text-decoration-line: underline;
+	text-decoration-line: none; 
+}
+
+.wc-block-cart__submit-button {
+    box-sizing: border-box;
+    margin: 0;
+    width: 38%;
+}
+
+.wc-block-cart .wc-block-cart__submit-container {
+    padding-left: 0;
+    text-align: right;
+}
+
+.wc-block-components-button:not(.is-link) {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 10px;
+    position: relative;
+    text-align: center;
+    transition: box-shadow .1s linear;
+    height: 40px;
+    min-width: 200px;
+    width: 250px;
+}
+
+/*filter align right*/
+.wc-block-components-product-sort-select {
+    margin-bottom: 24px;
+    text-align: right;
+}
+
+/* cart color*/
+.wp-element-button, .wp-block-button__link {
+    background-color: #b23030;
+    border-radius: var(--wp--custom--button--border--radius);
+    border-width: 0;
+    color: var(--wp--custom--button--color--text);
+    font-family: var(--wp--preset--font-family--body-font);
+    font-size: var(--wp--custom--button--typography--font-size);
+    font-weight: var(--wp--custom--button--typography--font-weight);
+    line-height: var(--wp--custom--button--typography--line-height);
+    padding-top: calc( var(--wp--custom--button--spacing--padding--top) + var(--wp--custom--button--border--width) );
+    padding-right: calc( var(--wp--custom--button--spacing--padding--right) + var(--wp--custom--button--border--width) );
+    padding-bottom: calc( var(--wp--custom--button--spacing--padding--bottom) + var(--wp--custom--button--border--width) );
+    padding-left: calc( var(--wp--custom--button--spacing--padding--left) + var(--wp--custom--button--border--width) );
+    text-decoration: none;
+}
+
+
+/*add cart size*/
+/*padding: 0em 0.3em; */
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+    display: inline-flex;
+    font-size: 1em;
+    justify-content: center;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    padding: 0em 0.3em;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
+}
+
+/*hide add reivew*/
+.wc-block-components-product-rating {
+    display: none;
+}
+
+/*filter margin*/
+input.wp-block-search__input, input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=range], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], textarea, select {
+    background: var(--wp--custom--form--color--background);
+    border: var(--wp--custom--form--border--width) var(--wp--custom--form--border--style) var(--wp--custom--form--border--color);
+    border-radius: var(--wp--custom--form--border--radius);
+    box-shadow: var(--wp--custom--form--color--box-shadow);
+    color: var(--wp--custom--form--color--text);
+    font-family: inherit;
+    padding: 0em;
+}
+
+
+}
