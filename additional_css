@@ -1,9 +1,48 @@
-/* #### cart ####*/
+
+
+/* ####page view cart*/
+.wc-block-mini-cart {
+	font-size: 22px;
+	visibility: visible !important;
+}
+
+.checkbox-wrapper {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+.wc-block-components-sidebar {
+    padding-top: 3%;
+}
+
+/* checkout but*/
+
+.wc-block-components-totals-wrapper.slot-wrapper {
+    padding-top: 5%;
+}
+
+
+/*checkout butt*/
+.wc-block-components-button:not(.is-link) {
+	color: #fcfde3;
+	min-height: 0px;
+	padding: 0px;
+	width: 35%;
+}
+
+/* ####page side cart ####*/
 .editor-styles-wrapper table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product-metadata, table.wc-block-cart-items .wc-block-cart-items__row .wc-block-components-product-metadata {
     margin-bottom: 0.75em;
     display: none;
 }
 
+/* ####page single product ####*/
+
+/* ### summary ###*/
 /*dscp margin*/
 p {
     display: block;
@@ -15,19 +54,13 @@ p {
 
 /*name, price font*/
 .woocommerce div.product div.summary h1.product_title {
-    font-size: 25px !important;
-    margin: 0;
-		display: none;
+    font-size: 30px !important;
 }
 
 .woocommerce div.product .entry-summary .price, .woocommerce div.product .entry-summary .woocommerce-Price-amount, .woocommerce div.product .entry-summary del {
-		line-height: 20px;
+		line-height: 30px;
     font-size: 15px;
-		display: none;
 }
-
-/*summary line top margin*/
-
 
 
 /*add to cart butt size*/
@@ -35,13 +68,18 @@ p {
     display: inline-block;
     text-align: center;
     word-break: break-word;
-    padding: 0rem 10rem;
+    padding: 0px 5px;
     margin-top: 1rem;
     text-decoration: none;
     font-size: medium;
     cursor: pointer;
 }
 
+.woocommerce div.product div.summary>* {
+    margin-bottom: 20px;
+}
+
+/* ### layout ### */
 /*hide nav*/
 .woocommerce .woocommerce-breadcrumb {
     display: none;
@@ -57,16 +95,19 @@ p {
 		width: 150%;
 }
 
-/*summary*/
+/* ### summary ### */
+
 /*sticky, pos, align*/
 .woocommerce #content div.product div.summary,
 .woocommerce div.product div.summary,
 .woocommerce-page #content div.product div.summary,
 .woocommerce-page div.product div.summary {
+		font-size: 18px;
     float: right;
     width: 63.5%;
-		left: 55%;
+		left: 60%;
     clear: none;
+	padding-top: 1%;
     position: fixed;
     text-align: left;
 }
@@ -79,7 +120,12 @@ p {
     margin-right: 1rem;
 }
 
+/* in stock number hide*/
+.stock.in-stock {
+  display: none !important;
+}
 
+/* ### gallery ### */
 /*magnify icon pos*/
 /*hide*/
 .woocommerce div.product div.woocommerce-product-gallery a.woocommerce-product-gallery__trigger {
@@ -125,7 +171,7 @@ p {
 .woocommerce-page #content div.product div.images img,
 .woocommerce-page div.product 
 div.images img {
-    max-width: 100%;
+    max-width: 75%;
     width: auto;
 		padding-bottom: 10px;
 }
@@ -169,14 +215,12 @@ img.zoomImg {
 }
 
 
-
-
-/* ##### shop page ##### */
+/* ####page shop page #### */
 
 /*filter align right*/
 .wc-block-components-product-sort-select {
     margin-bottom: 24px;
-    text-align: right;
+    text-align: rght;
 }
 
 /*hide add reivew*/
@@ -185,7 +229,21 @@ img.zoomImg {
 }
 
 /* product cate width */
-.wp-container-content-8 {
-    flex-grow: 1;
-    min-width: 200px;
+
+.wp-block-button.wc-block-components-product-button .wc-block-components-product-button__button {
+    display: none;
 }
+
+.wp-block-woocommerce-product-categories {
+	width: 160px;
+}
+
+/* .wp-container-content-8 {
+    flex-grow: 1;
+    min-width: 10px;
+} */
+
+
+
+
+
